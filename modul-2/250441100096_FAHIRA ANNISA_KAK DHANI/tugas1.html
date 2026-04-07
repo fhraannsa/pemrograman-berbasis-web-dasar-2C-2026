@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scora</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background: violet;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: grey;
+    }
+    nav a:hover {
+      color: yellow;
+      text-decoration: underline;
+    }
+
+    .produk {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .produk-img img {
+      width: 400px;
+      border-radius: 5px;
+    }
+    .produk-desc h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .testimoni {
+      background: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .card {
+      background: pink;
+      padding: 15px;
+      margin: 10px auto;
+      max-width: 300px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: gray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Scora</h1>
+      <ul class="nav-links">
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div id="produk" class="produk"> 
+  <div class="produk-img">
+    <img src="gambar1.jpeg" alt="Produk Scora">
+  </div>
+  <div class="produk-desc">
+    <h2>Skincare Modern untuk Kulit Agar Lebih Percaya Diri</h2>
+    <p>Perawatan kulit dengan teknologi dan bahan terbaik untuk hasil maksimal, memberikan kelembapan mendalam, melindungi dari polusi, dan membantu regenerasi kulit agar tampak lebih sehat dan bercahaya setiap hari.
+    </p>
+    <a href="#">Beli Sekarang</a>
+  </div>
+</div>
+
+
+  <div id="testimoni" class="testimoni">
+    <h3>Komentar</h3>
+    <div class="card">
+      <p>"Kulit saya jadi lebih glowing dan sehat sejak pakai Scora!"</p>
+      <span>- Aulia, 20 tahun</span>
+    </div>
+    <div class="card">
+      <p>"Teksturnya ringan dan cepat menyerap, cocok untuk sehari-hari."</p>
+      <span>- Istiana, 19 tahun</span>
+    </div>
+  </div>
+
+  <footer id="kontak">
+    <p>&copy; 2026 Scora. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
