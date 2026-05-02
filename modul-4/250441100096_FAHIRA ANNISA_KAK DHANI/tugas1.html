@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex">
+
+  <div class="flex-1 bg-blue-700 text-white flex flex-col justify-center items-center p-10">
+    <h1 class="text-3xl font-bold mb-4">Hello Prospective Students</h1>
+    <img src="gambar_login page.png">
+    <p class="text-center max-w-md">
+      Unlock your professional potential. Learn from industry leaders and stay ahead of the competition.
+    </p>
+  </div>
+
+  <div class="flex-1 bg-blue-100 flex justify-center items-center">
+    <div class="w-80">
+      <h2 class="text-2xl font-bold text-center mb-2">LOGIN PAGE</h2>
+      <p class="text-center text-gray-600 mb-6">Masukkan Username dan Password Anda</p>
+
+      <form id="loginForm" class="space-y-4">
+        <div>
+          <label for="email" class="block font-semibold mb-1">Email Address</label>
+          <input type="email" id="email" name="email" 
+                 class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                 placeholder="Masukkan Email">
+        </div>
+
+        <div>
+          <label for="password" class="block font-semibold mb-1">Password</label>
+          <input type="password" id="password" name="password" 
+                 class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                 placeholder="Masukkan Password">
+        </div>
+
+        <button type="submit" 
+                class="w-full bg-blue-800 text-white py-2 rounded hover:bg-blue-900 transition">
+          Login
+        </button>
+      </form>
+
+      <div class="mt-5 flex items-center">
+        <div class="flex-grow border-t border-gray-400"></div>
+            <span class="px-4 text-gray-600">Or Login With</span>
+            <div class="flex-grow border-t border-gray-400"></div>
+        </div>
+      <button class="w-full bg-white text-black py-2 rounded mt-2 hover:bg-gray-200 transition">
+        Sign in with Account Google
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      let email = document.getElementById("email").value.trim();
+      let password = document.getElementById("password").value.trim();
+
+      if (!email.includes("@")) {
+        alert("Email tidak valid! Gunakan format yang benar (contoh: nama@email.com).");
+        return;
+      }
+
+      if (password === "") {
+        alert("Password tidak boleh kosong!");
+        return;
+      }
+
+      alert("Login berhasil!");
+    });
+  </script>
+</body>
+</html>
